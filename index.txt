@@ -1,0 +1,13 @@
+INSERT INTO PRODUCT (ProductID, ProductName, Price, Category) VALUES (1, 'Laptop', 1200.00, 'Electronics');
+INSERT INTO PRODUCT (ProductID, ProductName, Price, Category) VALUES (2, 'Desk Chair', 150.00, 'Furniture');
+INSERT INTO PRODUCT (ProductID, ProductName, Price, Category) VALUES (3, 'Wireless Mouse', 25.00, 'Electronics');
+
+INSERT INTO CUSTOMER (CustomerID, LastName, FirstName, Email, Phone) VALUES (1, 'Doe', 'John', 'john.doe@example.com', '555-1234');
+INSERT INTO CUSTOMER (CustomerID, LastName, FirstName, Email, Phone) VALUES (2, 'Smith', 'Jane', 'jane.smith@example.com', '555-5678');
+
+INSERT INTO ORDERS (OrderID, OrderDate, CustomerID) VALUES (1001, SYSDATE, 1);
+INSERT INTO ORDERS (OrderID, OrderDate, CustomerID) VALUES (1002, SYSDATE, 2);
+
+INSERT INTO ORDER_ITEMS (OrderID, ProductID, Quantity) VALUES (1001, 1, 1);
+INSERT INTO ORDER_ITEMS (OrderID, ProductID, Quantity) VALUES (1001, 3, 2);
+INSERT INTO ORDER_ITEMS (OrderID, ProductID, Quantity) VALUES (1002, 2, 1);
